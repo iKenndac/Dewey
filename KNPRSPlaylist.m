@@ -89,7 +89,7 @@
 }
 
 -(NSImage *)icon {
-    return [NSImage imageNamed:@"CopyAudioBook"];
+    return [NSImage imageNamed:@"Playlist"];
 }
 
 -(BOOL)canReorder {

@@ -29,7 +29,7 @@
 		
 		[self setDevice:dev];
 		[self setFileURL:[NSURL fileURLWithPath:[KNPRSDevice databasePathFromVolumePath:[dev volumePath]]]];
-		
+		[self setFileType:@"xml"];
 	}
 	
 	return self;

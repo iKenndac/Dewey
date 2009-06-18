@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1DDD582C0DA1D0D100B32029 /* PRSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* PRSDocument.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
-		502B21410FBE2AA700D5D03A /* CopyAudioBook.tif in Resources */ = {isa = PBXBuildFile; fileRef = 502B21400FBE2AA700D5D03A /* CopyAudioBook.tif */; };
 		502B21440FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 502B21420FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.m */; };
 		50513E6B0FB2210200EB7309 /* KNPRSBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 50513E6A0FB2210200EB7309 /* KNPRSBook.m */; };
 		50513E7F0FB2227100EB7309 /* KNPRSPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 50513E7E0FB2227100EB7309 /* KNPRSPlaylist.m */; };
@@ -37,6 +36,8 @@
 		50975E2B0FE9962D005A1637 /* KNFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50975E2A0FE9962D005A1637 /* KNFrameView.m */; };
 		50975E540FE997C5005A1637 /* KNPRSDeviceRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 50975E530FE997C5005A1637 /* KNPRSDeviceRef.m */; };
 		50975E600FE9984F005A1637 /* KNPRSDeviceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 50975E5F0FE9984F005A1637 /* KNPRSDeviceProvider.m */; };
+		50B0D40F0FEAFDC100246E63 /* Book.tif in Resources */ = {isa = PBXBuildFile; fileRef = 50B0D40D0FEAFDC100246E63 /* Book.tif */; };
+		50B0D4100FEAFDC100246E63 /* Playlist.tif in Resources */ = {isa = PBXBuildFile; fileRef = 50B0D40E0FEAFDC100246E63 /* Playlist.tif */; };
 		50D25E380FB31A1E009F6AC1 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D25E360FB31A1E009F6AC1 /* NSData+Base64.m */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
@@ -58,7 +59,6 @@
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF750370BD2300C91783 /* Dewey_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dewey_Prefix.pch; sourceTree = "<group>"; };
-		502B21400FBE2AA700D5D03A /* CopyAudioBook.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = CopyAudioBook.tif; sourceTree = "<group>"; };
 		502B21420FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNVerticallyCenteredTextFieldCell.m; sourceTree = "<group>"; };
 		502B21430FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNVerticallyCenteredTextFieldCell.h; sourceTree = "<group>"; };
 		50513E690FB2210200EB7309 /* KNPRSBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNPRSBook.h; sourceTree = "<group>"; };
@@ -111,6 +111,8 @@
 		50975E530FE997C5005A1637 /* KNPRSDeviceRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNPRSDeviceRef.m; sourceTree = "<group>"; };
 		50975E5E0FE9984F005A1637 /* KNPRSDeviceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNPRSDeviceProvider.h; sourceTree = "<group>"; };
 		50975E5F0FE9984F005A1637 /* KNPRSDeviceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNPRSDeviceProvider.m; sourceTree = "<group>"; };
+		50B0D40D0FEAFDC100246E63 /* Book.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Book.tif; sourceTree = "<group>"; };
+		50B0D40E0FEAFDC100246E63 /* Playlist.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Playlist.tif; sourceTree = "<group>"; };
 		50D25E360FB31A1E009F6AC1 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		50D25E370FB31A1E009F6AC1 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -199,7 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				508DFA8E0FEA421800C2919A /* PRS505.png */,
-				502B21400FBE2AA700D5D03A /* CopyAudioBook.tif */,
+				50B0D40D0FEAFDC100246E63 /* Book.tif */,
+				50B0D40E0FEAFDC100246E63 /* Playlist.tif */,
 				50628D330FB3716300F7888B /* SplitterHandle.tif */,
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
 				8D15AC360486D014006FF6A4 /* Info.plist */,
@@ -357,9 +360,10 @@
 				1DDD582C0DA1D0D100B32029 /* PRSDocument.xib in Resources */,
 				1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */,
 				50628D340FB3716300F7888B /* SplitterHandle.tif in Resources */,
-				502B21410FBE2AA700D5D03A /* CopyAudioBook.tif in Resources */,
 				50975BBF0FE98A6B005A1637 /* DeviceSelectionController.xib in Resources */,
 				508DFA8F0FEA421800C2919A /* PRS505.png in Resources */,
+				50B0D40F0FEAFDC100246E63 /* Book.tif in Resources */,
+				50B0D4100FEAFDC100246E63 /* Playlist.tif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

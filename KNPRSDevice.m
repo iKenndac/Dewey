@@ -123,7 +123,7 @@ static NSString *deviceKVOContext = @"deviceKVO";
 }
 
 -(NSImage *)icon {
-    return [NSImage imageNamed:@"CopyAudioBook"];
+    return [NSImage imageNamed:@"Book"];
 }
 
 #pragma mark -
