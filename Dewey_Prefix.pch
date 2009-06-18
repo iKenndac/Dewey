@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'PRS Reader' target in the 'PRS Reader' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

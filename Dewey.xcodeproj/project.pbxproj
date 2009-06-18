@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD582C0DA1D0D100B32029 /* PRSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* PRSDocument.xib */; };
+		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
+		502B21410FBE2AA700D5D03A /* CopyAudioBook.tif in Resources */ = {isa = PBXBuildFile; fileRef = 502B21400FBE2AA700D5D03A /* CopyAudioBook.tif */; };
+		502B21440FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 502B21420FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.m */; };
+		50513E6B0FB2210200EB7309 /* KNPRSBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 50513E6A0FB2210200EB7309 /* KNPRSBook.m */; };
+		50513E7F0FB2227100EB7309 /* KNPRSPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 50513E7E0FB2227100EB7309 /* KNPRSPlaylist.m */; };
+		50513EBA0FB2293E00EB7309 /* KNPRSDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 50513EB90FB2293E00EB7309 /* KNPRSDevice.m */; };
+		50513F110FB230E400EB7309 /* KNPRSBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 50513F100FB230E400EB7309 /* KNPRSBookmark.m */; };
+		50513F4F0FB2350900EB7309 /* KNPRSLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 50513F4E0FB2350900EB7309 /* KNPRSLayout.m */; };
+		50628C780FB3691200F7888B /* KNReaderDocumentWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50628C770FB3691200F7888B /* KNReaderDocumentWindowController.m */; };
+		50628D1C0FB36F7B00F7888B /* KNStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50628D1B0FB36F7B00F7888B /* KNStatusBarView.m */; };
+		50628D1F0FB36F8500F7888B /* KNEmbossedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50628D1E0FB36F8500F7888B /* KNEmbossedTextField.m */; };
+		50628D220FB36F8F00F7888B /* KNDarkSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50628D210FB36F8F00F7888B /* KNDarkSplitView.m */; };
+		50628D2C0FB3708700F7888B /* KNGradientExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50628D2B0FB3708700F7888B /* KNGradientExtensions.m */; };
+		50628D340FB3716300F7888B /* SplitterHandle.tif in Resources */ = {isa = PBXBuildFile; fileRef = 50628D330FB3716300F7888B /* SplitterHandle.tif */; };
+		50628D4D0FB3735D00F7888B /* KNTableCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 50628D490FB3735D00F7888B /* KNTableCorner.m */; };
+		50628D4E0FB3735D00F7888B /* KNTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 50628D4A0FB3735D00F7888B /* KNTableHeader.m */; };
+		506AFF2C0FB73875004D57B2 /* KNDividerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 506AFF2B0FB73875004D57B2 /* KNDividerCell.m */; };
+		508DFA8F0FEA421800C2919A /* PRS505.png in Resources */ = {isa = PBXBuildFile; fileRef = 508DFA8E0FEA421800C2919A /* PRS505.png */; };
+		509759DA0FE96D5F005A1637 /* KNWhiteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 509759D90FE96D5F005A1637 /* KNWhiteView.m */; };
+		50975BBF0FE98A6B005A1637 /* DeviceSelectionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50975BBE0FE98A6B005A1637 /* DeviceSelectionController.xib */; };
+		50975C0B0FE98B38005A1637 /* DeviceSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50975C0A0FE98B38005A1637 /* DeviceSelectionController.m */; };
+		50975C0E0FE98BA2005A1637 /* KNDeviceSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50975C0D0FE98BA2005A1637 /* KNDeviceSelectionView.m */; };
+		50975C4B0FE98EC4005A1637 /* RoundedRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 50975C4A0FE98EC4005A1637 /* RoundedRectangle.m */; };
+		50975C4E0FE98ECD005A1637 /* TintedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 50975C4D0FE98ECD005A1637 /* TintedImage.m */; };
+		50975CFD0FE9927C005A1637 /* KNReaderDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50975CFC0FE9927C005A1637 /* KNReaderDocumentController.m */; };
+		50975E1C0FE995D0005A1637 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50975E1B0FE995D0005A1637 /* AppDelegate.m */; };
+		50975E2B0FE9962D005A1637 /* KNFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50975E2A0FE9962D005A1637 /* KNFrameView.m */; };
+		50975E540FE997C5005A1637 /* KNPRSDeviceRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 50975E530FE997C5005A1637 /* KNPRSDeviceRef.m */; };
+		50975E600FE9984F005A1637 /* KNPRSDeviceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 50975E5F0FE9984F005A1637 /* KNPRSDeviceProvider.m */; };
+		50D25E380FB31A1E009F6AC1 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D25E360FB31A1E009F6AC1 /* NSData+Base64.m */; };
+		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		8D15AC310486D014006FF6A4 /* KNReaderDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* KNReaderDocument.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FBA07B3F13500E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58290DA1D0D100B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PRSDocument.xib; sourceTree = "<group>"; };
+		1DDD582B0DA1D0D100B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2A37F4ACFDCFA73011CA2CEA /* KNReaderDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNReaderDocument.m; sourceTree = "<group>"; };
+		2A37F4AEFDCFA73011CA2CEA /* KNReaderDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNReaderDocument.h; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF750370BD2300C91783 /* Dewey_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dewey_Prefix.pch; sourceTree = "<group>"; };
+		502B21400FBE2AA700D5D03A /* CopyAudioBook.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = CopyAudioBook.tif; sourceTree = "<group>"; };
+		502B21420FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNVerticallyCenteredTextFieldCell.m; sourceTree = "<group>"; };
+		502B21430FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNVerticallyCenteredTextFieldCell.h; sourceTree = "<group>"; };
+		50513E690FB2210200EB7309 /* KNPRSBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNPRSBook.h; sourceTree = "<group>"; };
+		50513E6A0FB2210200EB7309 /* KNPRSBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNPRSBook.m; sourceTree = "<group>"; };
+		50513E7D0FB2227100EB7309 /* KNPRSPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNPRSPlaylist.h; sourceTree = "<group>"; };
+		50513E7E0FB2227100EB7309 /* KNPRSPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNPRSPlaylist.m; sourceTree = "<group>"; };
+		50513EB80FB2293E00EB7309 /* KNPRSDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNPRSDevice.h; sourceTree = "<group>"; };
+		50513EB90FB2293E00EB7309 /* KNPRSDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNPRSDevice.m; sourceTree = "<group>"; };
+		50513F0F0FB230E400EB7309 /* KNPRSBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNPRSBookmark.h; sourceTree = "<group>"; };
+		50513F100FB230E400EB7309 /* KNPRSBookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNPRSBookmark.m; sourceTree = "<group>"; };
+		50513F4D0FB2350900EB7309 /* KNPRSLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNPRSLayout.h; sourceTree = "<group>"; };
+		50513F4E0FB2350900EB7309 /* KNPRSLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNPRSLayout.m; sourceTree = "<group>"; };
+		50628C760FB3691200F7888B /* KNReaderDocumentWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNReaderDocumentWindowController.h; sourceTree = "<group>"; };
+		50628C770FB3691200F7888B /* KNReaderDocumentWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNReaderDocumentWindowController.m; sourceTree = "<group>"; };
+		50628D1A0FB36F7B00F7888B /* KNStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNStatusBarView.h; sourceTree = "<group>"; };
+		50628D1B0FB36F7B00F7888B /* KNStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNStatusBarView.m; sourceTree = "<group>"; };
+		50628D1D0FB36F8500F7888B /* KNEmbossedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNEmbossedTextField.h; sourceTree = "<group>"; };
+		50628D1E0FB36F8500F7888B /* KNEmbossedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNEmbossedTextField.m; sourceTree = "<group>"; };
+		50628D200FB36F8F00F7888B /* KNDarkSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDarkSplitView.h; sourceTree = "<group>"; };
+		50628D210FB36F8F00F7888B /* KNDarkSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNDarkSplitView.m; sourceTree = "<group>"; };
+		50628D2A0FB3708700F7888B /* KNGradientExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNGradientExtensions.h; sourceTree = "<group>"; };
+		50628D2B0FB3708700F7888B /* KNGradientExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNGradientExtensions.m; sourceTree = "<group>"; };
+		50628D330FB3716300F7888B /* SplitterHandle.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SplitterHandle.tif; sourceTree = "<group>"; };
+		50628D490FB3735D00F7888B /* KNTableCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTableCorner.m; sourceTree = "<group>"; };
+		50628D4A0FB3735D00F7888B /* KNTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTableHeader.m; sourceTree = "<group>"; };
+		50628D4B0FB3735D00F7888B /* KNTableCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTableCorner.h; sourceTree = "<group>"; };
+		50628D4C0FB3735D00F7888B /* KNTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTableHeader.h; sourceTree = "<group>"; };
+		506AFF2A0FB73875004D57B2 /* KNDividerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDividerCell.h; sourceTree = "<group>"; };
+		506AFF2B0FB73875004D57B2 /* KNDividerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNDividerCell.m; sourceTree = "<group>"; };
+		508DFA8E0FEA421800C2919A /* PRS505.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PRS505.png; sourceTree = "<group>"; };
+		509759D80FE96D5F005A1637 /* KNWhiteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNWhiteView.h; sourceTree = "<group>"; };
+		509759D90FE96D5F005A1637 /* KNWhiteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNWhiteView.m; sourceTree = "<group>"; };
+		50975BBE0FE98A6B005A1637 /* DeviceSelectionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceSelectionController.xib; sourceTree = "<group>"; };
+		50975C090FE98B38005A1637 /* DeviceSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceSelectionController.h; sourceTree = "<group>"; };
+		50975C0A0FE98B38005A1637 /* DeviceSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceSelectionController.m; sourceTree = "<group>"; };
+		50975C0C0FE98BA2005A1637 /* KNDeviceSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDeviceSelectionView.h; sourceTree = "<group>"; };
+		50975C0D0FE98BA2005A1637 /* KNDeviceSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNDeviceSelectionView.m; sourceTree = "<group>"; };
+		50975C110FE98BE5005A1637 /* KNDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDevice.h; sourceTree = "<group>"; };
+		50975C490FE98EC4005A1637 /* RoundedRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedRectangle.h; sourceTree = "<group>"; };
+		50975C4A0FE98EC4005A1637 /* RoundedRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedRectangle.m; sourceTree = "<group>"; };
+		50975C4C0FE98ECD005A1637 /* TintedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TintedImage.h; sourceTree = "<group>"; };
+		50975C4D0FE98ECD005A1637 /* TintedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TintedImage.m; sourceTree = "<group>"; };
+		50975CFB0FE9927C005A1637 /* KNReaderDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNReaderDocumentController.h; sourceTree = "<group>"; };
+		50975CFC0FE9927C005A1637 /* KNReaderDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNReaderDocumentController.m; sourceTree = "<group>"; };
+		50975E1A0FE995D0005A1637 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		50975E1B0FE995D0005A1637 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		50975E290FE9962D005A1637 /* KNFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFrameView.h; sourceTree = "<group>"; };
+		50975E2A0FE9962D005A1637 /* KNFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFrameView.m; sourceTree = "<group>"; };
+		50975E520FE997C5005A1637 /* KNPRSDeviceRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNPRSDeviceRef.h; sourceTree = "<group>"; };
+		50975E530FE997C5005A1637 /* KNPRSDeviceRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNPRSDeviceRef.m; sourceTree = "<group>"; };
+		50975E5E0FE9984F005A1637 /* KNPRSDeviceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNPRSDeviceProvider.h; sourceTree = "<group>"; };
+		50975E5F0FE9984F005A1637 /* KNPRSDeviceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNPRSDeviceProvider.m; sourceTree = "<group>"; };
+		50D25E360FB31A1E009F6AC1 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		50D25E370FB31A1E009F6AC1 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* Dewey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dewey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+				13E42FBA07B3F13500E4EEF1 /* CoreData.framework */,
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D15AC370486D014006FF6A4 /* Dewey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* PRS Reader */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+			);
+			name = "PRS Reader";
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				50513F500FB2350F00EB7309 /* Model */,
+				2A37F4AEFDCFA73011CA2CEA /* KNReaderDocument.h */,
+				2A37F4ACFDCFA73011CA2CEA /* KNReaderDocument.m */,
+				508DFA550FEA3FC500C2919A /* Controllers */,
+				508DFA530FEA3F8100C2919A /* UI */,
+				50628D170FB36F6100F7888B /* Custom Views */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				50975C490FE98EC4005A1637 /* RoundedRectangle.h */,
+				50975C4A0FE98EC4005A1637 /* RoundedRectangle.m */,
+				50975C4C0FE98ECD005A1637 /* TintedImage.h */,
+				50975C4D0FE98ECD005A1637 /* TintedImage.m */,
+				50D25E370FB31A1E009F6AC1 /* NSData+Base64.h */,
+				50D25E360FB31A1E009F6AC1 /* NSData+Base64.m */,
+				32DBCF750370BD2300C91783 /* Dewey_Prefix.pch */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				508DFA8E0FEA421800C2919A /* PRS505.png */,
+				502B21400FBE2AA700D5D03A /* CopyAudioBook.tif */,
+				50628D330FB3716300F7888B /* SplitterHandle.tif */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				8D15AC360486D014006FF6A4 /* Info.plist */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+				50975BBE0FE98A6B005A1637 /* DeviceSelectionController.xib */,
+				1DDD58280DA1D0D100B32029 /* PRSDocument.xib */,
+				1DDD582A0DA1D0D100B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50513F500FB2350F00EB7309 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50975C110FE98BE5005A1637 /* KNDevice.h */,
+				50975E5D0FE9983F005A1637 /* Device Provider */,
+				508DFA540FEA3F9700C2919A /* Device Classes */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		50628D170FB36F6100F7888B /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				50975E290FE9962D005A1637 /* KNFrameView.h */,
+				50975E2A0FE9962D005A1637 /* KNFrameView.m */,
+				50975C0C0FE98BA2005A1637 /* KNDeviceSelectionView.h */,
+				50975C0D0FE98BA2005A1637 /* KNDeviceSelectionView.m */,
+				509759D80FE96D5F005A1637 /* KNWhiteView.h */,
+				509759D90FE96D5F005A1637 /* KNWhiteView.m */,
+				50628D1A0FB36F7B00F7888B /* KNStatusBarView.h */,
+				50628D1B0FB36F7B00F7888B /* KNStatusBarView.m */,
+				50628D1D0FB36F8500F7888B /* KNEmbossedTextField.h */,
+				50628D1E0FB36F8500F7888B /* KNEmbossedTextField.m */,
+				50628D200FB36F8F00F7888B /* KNDarkSplitView.h */,
+				50628D210FB36F8F00F7888B /* KNDarkSplitView.m */,
+				50628D2A0FB3708700F7888B /* KNGradientExtensions.h */,
+				50628D2B0FB3708700F7888B /* KNGradientExtensions.m */,
+				50628D4B0FB3735D00F7888B /* KNTableCorner.h */,
+				50628D490FB3735D00F7888B /* KNTableCorner.m */,
+				50628D4C0FB3735D00F7888B /* KNTableHeader.h */,
+				50628D4A0FB3735D00F7888B /* KNTableHeader.m */,
+				506AFF2A0FB73875004D57B2 /* KNDividerCell.h */,
+				506AFF2B0FB73875004D57B2 /* KNDividerCell.m */,
+				502B21430FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.h */,
+				502B21420FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.m */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		508DFA530FEA3F8100C2919A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				50628C760FB3691200F7888B /* KNReaderDocumentWindowController.h */,
+				50628C770FB3691200F7888B /* KNReaderDocumentWindowController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		508DFA540FEA3F9700C2919A /* Device Classes */ = {
+			isa = PBXGroup;
+			children = (
+				50513EB80FB2293E00EB7309 /* KNPRSDevice.h */,
+				50513EB90FB2293E00EB7309 /* KNPRSDevice.m */,
+				50513E690FB2210200EB7309 /* KNPRSBook.h */,
+				50513E6A0FB2210200EB7309 /* KNPRSBook.m */,
+				50513E7D0FB2227100EB7309 /* KNPRSPlaylist.h */,
+				50513E7E0FB2227100EB7309 /* KNPRSPlaylist.m */,
+				50513F0F0FB230E400EB7309 /* KNPRSBookmark.h */,
+				50513F100FB230E400EB7309 /* KNPRSBookmark.m */,
+				50513F4D0FB2350900EB7309 /* KNPRSLayout.h */,
+				50513F4E0FB2350900EB7309 /* KNPRSLayout.m */,
+			);
+			name = "Device Classes";
+			sourceTree = "<group>";
+		};
+		508DFA550FEA3FC500C2919A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				50975CFB0FE9927C005A1637 /* KNReaderDocumentController.h */,
+				50975CFC0FE9927C005A1637 /* KNReaderDocumentController.m */,
+				50975C090FE98B38005A1637 /* DeviceSelectionController.h */,
+				50975C0A0FE98B38005A1637 /* DeviceSelectionController.m */,
+				50975E1A0FE995D0005A1637 /* AppDelegate.h */,
+				50975E1B0FE995D0005A1637 /* AppDelegate.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		50975E5D0FE9983F005A1637 /* Device Provider */ = {
+			isa = PBXGroup;
+			children = (
+				50975E520FE997C5005A1637 /* KNPRSDeviceRef.h */,
+				50975E530FE997C5005A1637 /* KNPRSDeviceRef.m */,
+				50975E5E0FE9984F005A1637 /* KNPRSDeviceProvider.h */,
+				50975E5F0FE9984F005A1637 /* KNPRSDeviceProvider.m */,
+			);
+			name = "Device Provider";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D15AC270486D014006FF6A4 /* Dewey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "Dewey" */;
+			buildPhases = (
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dewey;
+			productInstallPath = "$(HOME)/Applications";
+			productName = "PRS Reader";
+			productReference = 8D15AC370486D014006FF6A4 /* Dewey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "Dewey" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* PRS Reader */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D15AC270486D014006FF6A4 /* Dewey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
+				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
+				1DDD582C0DA1D0D100B32029 /* PRSDocument.xib in Resources */,
+				1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */,
+				50628D340FB3716300F7888B /* SplitterHandle.tif in Resources */,
+				502B21410FBE2AA700D5D03A /* CopyAudioBook.tif in Resources */,
+				50975BBF0FE98A6B005A1637 /* DeviceSelectionController.xib in Resources */,
+				508DFA8F0FEA421800C2919A /* PRS505.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D15AC300486D014006FF6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC310486D014006FF6A4 /* KNReaderDocument.m in Sources */,
+				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				50513E6B0FB2210200EB7309 /* KNPRSBook.m in Sources */,
+				50513E7F0FB2227100EB7309 /* KNPRSPlaylist.m in Sources */,
+				50513EBA0FB2293E00EB7309 /* KNPRSDevice.m in Sources */,
+				50513F110FB230E400EB7309 /* KNPRSBookmark.m in Sources */,
+				50513F4F0FB2350900EB7309 /* KNPRSLayout.m in Sources */,
+				50D25E380FB31A1E009F6AC1 /* NSData+Base64.m in Sources */,
+				50628C780FB3691200F7888B /* KNReaderDocumentWindowController.m in Sources */,
+				50628D1C0FB36F7B00F7888B /* KNStatusBarView.m in Sources */,
+				50628D1F0FB36F8500F7888B /* KNEmbossedTextField.m in Sources */,
+				50628D220FB36F8F00F7888B /* KNDarkSplitView.m in Sources */,
+				50628D2C0FB3708700F7888B /* KNGradientExtensions.m in Sources */,
+				50628D4D0FB3735D00F7888B /* KNTableCorner.m in Sources */,
+				50628D4E0FB3735D00F7888B /* KNTableHeader.m in Sources */,
+				506AFF2C0FB73875004D57B2 /* KNDividerCell.m in Sources */,
+				502B21440FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.m in Sources */,
+				509759DA0FE96D5F005A1637 /* KNWhiteView.m in Sources */,
+				50975C0B0FE98B38005A1637 /* DeviceSelectionController.m in Sources */,
+				50975C0E0FE98BA2005A1637 /* KNDeviceSelectionView.m in Sources */,
+				50975C4B0FE98EC4005A1637 /* RoundedRectangle.m in Sources */,
+				50975C4E0FE98ECD005A1637 /* TintedImage.m in Sources */,
+				50975CFD0FE9927C005A1637 /* KNReaderDocumentController.m in Sources */,
+				50975E1C0FE995D0005A1637 /* AppDelegate.m in Sources */,
+				50975E2B0FE9962D005A1637 /* KNFrameView.m in Sources */,
+				50975E540FE997C5005A1637 /* KNPRSDeviceRef.m in Sources */,
+				50975E600FE9984F005A1637 /* KNPRSDeviceProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58280DA1D0D100B32029 /* PRSDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58290DA1D0D100B32029 /* English */,
+			);
+			name = PRSDocument.xib;
+			sourceTree = "<group>";
+		};
+		1DDD582A0DA1D0D100B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD582B0DA1D0D100B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C05733C808A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dewey_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Dewey;
+			};
+			name = Debug;
+		};
+		C05733C908A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dewey_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Dewey;
+			};
+			name = Release;
+		};
+		C05733CC08A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C05733CD08A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "Dewey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733C808A9546B00998B17 /* Debug */,
+				C05733C908A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "Dewey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733CC08A9546B00998B17 /* Debug */,
+				C05733CD08A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}
