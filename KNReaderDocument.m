@@ -22,18 +22,6 @@
     }
     return self;
 }
-
--(id)initWithDevice:(KNPRSDevice *)dev {
-	
-	if (self = [self init]) {
-		
-		[self setDevice:dev];
-		[self setFileURL:[NSURL fileURLWithPath:[KNPRSDevice databasePathFromVolumePath:[dev volumePath]]]];
-		[self setFileType:@"xml"];
-	}
-	
-	return self;
-}
 	
 
 -(void)makeWindowControllers {
@@ -54,11 +42,20 @@
 - (id)initWithType:(NSString *)typeName error:(NSError **)outError {
 	
 	if (self = [self init]) {
-		device = [[KNPRSDevice alloc] init];
+		[self setDevice:[[[KNPRSDevice alloc] init] autorelease]];
 	}
 	return self;
 }
+
+
+-(BOOL)validateUserInterfaceItem:(id <NSValidatedUserInterfaceItem>)anItem {
 	
+	if ([anItem action] == @selector(saveDocument:)) {
+		return [self isDocumentEdited];
+	} else {
+		return [super validateUserInterfaceItem:anItem];
+	}
+}
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
 {
@@ -68,7 +65,7 @@
 
     // For applications targeted for Panther or earlier systems, you should use the deprecated API -dataRepresentationOfType:. In this case you can also choose to override -fileWrapperRepresentationOfType: or -writeToFile:ofType: instead.
 
-    return [[device xmlDocument] XMLDataWithOptions:NSXMLNodePrettyPrint | NSXMLNodeCompactEmptyElement | NSXMLNodePrettyPrint];
+    return [[device xmlDocument] XMLDataWithOptions:NSXMLNodePrettyPrint | NSXMLNodeCompactEmptyElement];
     
     if ( outError != NULL ) {
 		*outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
@@ -79,13 +76,9 @@
 - (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError
 {
     
-    NSXMLDocument *doc = [[NSXMLDocument alloc] initWithData:data
-                                                     options:0
-                                                       error:nil];
-    
-    if (doc) {
-        device = [[KNPRSDevice alloc] initWithXMLDocument:[doc autorelease]];
-    }
+	NSString *basePath = [KNPRSDevice volumePathFromDatabasePath:[[self fileURL] path]];
+	
+    [self setDevice:[[[KNPRSDevice alloc] initWithPathToReaderVolume:basePath] autorelease]];
     
     // Insert code here to read your document from the given data of the specified type.  If the given outError != NULL, ensure that you set *outError when returning NO.
 
@@ -98,6 +91,7 @@
 	}
     return YES;
 }
+
 
 @synthesize device;
 @end

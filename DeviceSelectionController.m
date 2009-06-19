@@ -13,15 +13,15 @@
 
 @implementation DeviceSelectionController
 
-+(KNPRSDevice *)askForDevice {
++(NSString *)askForDevicePath {
 	
 	DeviceSelectionController *controller = [[DeviceSelectionController alloc] initWithWindowNibName:@"DeviceSelectionController"];
     
-    KNPRSDevice *device = [controller askForDevice];
+    NSString *devicePath = [controller askForDevicePath];
 	
 	[controller release];
     
-    return device;
+    return devicePath;
 	
 }
 
@@ -36,13 +36,13 @@
 
 
 
--(KNPRSDevice *)askForDevice {
+-(NSString *)askForDevicePath {
     
 	//[loadingProgress startAnimation:nil];
 	//[loadingProgress setUsesThreadedAnimation:YES];	
 	
 	[NSApp runModalForWindow:[self window]];
-	return createdDevice;
+	return selectedDevicePath;
 }
 
 
@@ -62,7 +62,17 @@
 	} else {
 		
 		// Init the device
-		createdDevice = [[KNPRSDevice alloc] initWithPathToReaderVolume:[(KNPRSDeviceRef *)[deviceSelectionView selectedDevice] basePath]];
+		selectedDevicePath = [[(KNPRSDeviceRef *)[deviceSelectionView selectedDevice] basePath] copy];
+		
+		if (!selectedDevicePath) {
+		
+			NSRunAlertPanel(@"Could not open device", 
+							@"An error occurred while trying to read the device's database.", 
+							@"OK", 
+							nil, 
+							nil);	
+			
+		}
 		
 		[NSApp stopModalWithCode:0];
 		
@@ -77,7 +87,7 @@
     //[startupWindow close];
 	[[self window] setIsVisible:NO];
 	
-    createdDevice = nil;
+    //createdDevice = nil;
     
     [NSApp stopModalWithCode:0];
 	
@@ -114,8 +124,8 @@
 
 -(void)dealloc {
 
-	[createdDevice release];
-	createdDevice = nil;
+	[selectedDevicePath release];
+	selectedDevicePath = nil;
 	
 	[deviceSelectionView setDelegate:nil];
 	

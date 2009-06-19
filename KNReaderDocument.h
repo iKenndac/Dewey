@@ -18,6 +18,5 @@
 }
 @property (retain) KNPRSDevice *device;
 
--(id)initWithDevice:(KNPRSDevice *)dev;
 
 @end

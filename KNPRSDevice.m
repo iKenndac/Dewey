@@ -31,7 +31,14 @@ static NSString *deviceKVOContext = @"deviceKVO";
                 [self setVolumePath:path];
             }
             return self;
-        }
+        } else {
+				
+			if (self = [self init]) {
+				[self setVolumePath:path];
+			}
+			return self;
+			
+		}
         return nil;
         
     } else {
@@ -151,6 +158,14 @@ static NSString *deviceKVOContext = @"deviceKVO";
 			 stringByAppendingPathComponent:@"cache"] 
 			stringByAppendingPathComponent:@"media.xml"];
     
+}
+
++(NSString *)volumePathFromDatabasePath:(NSString *)databasePath {
+
+	return [[[databasePath stringByDeletingLastPathComponent]
+			 stringByDeletingLastPathComponent]
+			stringByDeletingLastPathComponent];
+	
 }
 
 -(NSInteger)performIntegrityCheck {

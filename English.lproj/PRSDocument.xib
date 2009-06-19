@@ -38,12 +38,12 @@
 			<object class="NSWindowTemplate" id="275939982">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{133, 236}, {642, 412}}</string>
+				<string key="NSWindowRect">{{165, 546}, {642, 412}}</string>
 				<int key="NSWTFlags">1886912512</int>
 				<string key="NSWindowTitle">Window</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<string key="NSViewClass">View</string>
-				<string key="NSWindowContentMaxSize">{1.79769e+308, 1.79769e+308}</string>
+				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
 				<string key="NSWindowContentMinSize">{600, 400}</string>
 				<object class="NSView" key="NSWindowView" id="568628114">
 					<reference key="NSNextResponder"/>
@@ -99,7 +99,7 @@
 																		</object>
 																		<object class="NSColor" key="NSBackgroundColor">
 																			<int key="NSColorSpace">3</int>
-																			<bytes key="NSWhite">MC4zMzMzMzI5OQA</bytes>
+																			<bytes key="NSWhite">MC4zMzMzMzI5ODU2AA</bytes>
 																		</object>
 																		<object class="NSColor" key="NSTextColor" id="454805795">
 																			<int key="NSColorSpace">6</int>
@@ -127,7 +127,7 @@
 																</object>
 																<object class="NSTableColumn" id="71733494">
 																	<string key="NSIdentifier">title</string>
-																	<double key="NSWidth">140.66800000000001</double>
+																	<double key="NSWidth">140.66799926757812</double>
 																	<double key="NSMinWidth">10</double>
 																	<double key="NSMaxWidth">1000</double>
 																	<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -162,7 +162,7 @@
 																			<string key="NSColorName">controlBackgroundColor</string>
 																			<object class="NSColor" key="NSColor" id="592971789">
 																				<int key="NSColorSpace">3</int>
-																				<bytes key="NSWhite">MC42NjY2NjY2NjY3AA</bytes>
+																				<bytes key="NSWhite">MC42NjY2NjY2ODY1AA</bytes>
 																			</object>
 																		</object>
 																		<object class="NSColor" key="NSTextColor" id="1019043750">
@@ -224,7 +224,7 @@
 													<reference key="NSSuperview" ref="624780447"/>
 													<reference key="NSTarget" ref="624780447"/>
 													<string key="NSAction">_doScroller:</string>
-													<double key="NSPercent">0.99718309999999999</double>
+													<double key="NSPercent">0.99718308448791504</double>
 												</object>
 												<object class="NSScroller" id="937682800">
 													<reference key="NSNextResponder" ref="624780447"/>
@@ -234,7 +234,7 @@
 													<int key="NSsFlags">1</int>
 													<reference key="NSTarget" ref="624780447"/>
 													<string key="NSAction">_doScroller:</string>
-													<double key="NSPercent">0.57142859999999995</double>
+													<double key="NSPercent">0.57142859697341919</double>
 												</object>
 											</object>
 											<string key="NSFrame">{{0, 28}, {187, 384}}</string>
@@ -596,7 +596,7 @@
 															<object class="NSMutableArray" key="NSTableColumns">
 																<bool key="EncodedWithXMLCoder">YES</bool>
 																<object class="NSTableColumn" id="620908739">
-																	<double key="NSWidth">208.57420000000002</double>
+																	<double key="NSWidth">208.57421875</double>
 																	<double key="NSMinWidth">40</double>
 																	<double key="NSMaxWidth">1000</double>
 																	<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -606,7 +606,7 @@
 																		<reference key="NSSupport" ref="26"/>
 																		<object class="NSColor" key="NSBackgroundColor" id="294436290">
 																			<int key="NSColorSpace">3</int>
-																			<bytes key="NSWhite">MC4zMzMzMzI5OQA</bytes>
+																			<bytes key="NSWhite">MC4zMzMzMzI5ODU2AA</bytes>
 																		</object>
 																		<reference key="NSTextColor" ref="454805795"/>
 																	</object>
@@ -625,7 +625,7 @@
 																	<reference key="NSTableView" ref="918835473"/>
 																</object>
 																<object class="NSTableColumn" id="585754249">
-																	<double key="NSWidth">238.57809999999995</double>
+																	<double key="NSWidth">238.57806396484375</double>
 																	<double key="NSMinWidth">40</double>
 																	<double key="NSMaxWidth">1000</double>
 																	<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -681,7 +681,7 @@
 													<reference key="NSTarget" ref="710486919"/>
 													<string key="NSAction">_doScroller:</string>
 													<double key="NSCurValue">37</double>
-													<double key="NSPercent">0.19473679999999999</double>
+													<double key="NSPercent">0.1947367936372757</double>
 												</object>
 												<object class="NSScroller" id="192183324">
 													<reference key="NSNextResponder" ref="710486919"/>
@@ -691,7 +691,7 @@
 													<int key="NSsFlags">1</int>
 													<reference key="NSTarget" ref="710486919"/>
 													<string key="NSAction">_doScroller:</string>
-													<double key="NSPercent">0.99340660000000003</double>
+													<double key="NSPercent">0.99340659379959106</double>
 												</object>
 												<object class="NSClipView" id="546658708">
 													<reference key="NSNextResponder" ref="710486919"/>
@@ -735,9 +735,10 @@
 					<string key="NSFrameSize">{642, 412}</string>
 					<reference key="NSSuperview"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
 				<string key="NSMinSize">{600, 422}</string>
-				<string key="NSMaxSize">{1.79769e+308, 1.79769e+308}</string>
+				<string key="NSMaxSize">{3.40282e+38, 3.40282e+38}</string>
+				<string key="NSFrameAutosaveName">DocWindow</string>
 			</object>
 			<object class="NSCustomObject" id="796877042">
 				<string key="NSClassName">NSApplication</string>
@@ -784,7 +785,7 @@
 							<reference key="NSBackgroundColor" ref="1048414148"/>
 							<object class="NSColor" key="NSTextColor">
 								<int key="NSColorSpace">3</int>
-								<bytes key="NSWhite">MC40MDEzODcxMTczAA</bytes>
+								<bytes key="NSWhite">MC40MDEzODcxMjUzAA</bytes>
 							</object>
 						</object>
 					</object>

@@ -13,11 +13,11 @@
 @interface DeviceSelectionController : NSWindowController {
 
 	IBOutlet KNDeviceSelectionView *deviceSelectionView;
-	KNPRSDevice *createdDevice;
+	NSString *selectedDevicePath;
 }
 
-+(KNPRSDevice *)askForDevice;
--(KNPRSDevice *)askForDevice;
++(NSString *)askForDevicePath;
+-(NSString *)askForDevicePath;
 
 -(IBAction)doStandardOpen:(id)sender;	
 -(IBAction)bailOut:(id)sender;

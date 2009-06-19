@@ -26,6 +26,7 @@
 @property (nonatomic, copy, readwrite) NSString *volumePath;
 
 +(NSString *)databasePathFromVolumePath:(NSString *)volume;
++(NSString *)volumePathFromDatabasePath:(NSString *)databasePath;
 
 -(KNPRSPlaylist *)createPlaylist;
 -(void)addPlaylist:(KNPRSPlaylist *)playlist;

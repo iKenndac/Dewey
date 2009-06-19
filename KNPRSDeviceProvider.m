@@ -68,6 +68,13 @@
 
 -(void)performThreadedDeviceUpdate {
 	
+	[self retain];
+	
+	// Because we update the devices array for each device we find, 
+	// it's possible for the user to accept a device before we're done. 
+	// Retaining self while we're scanning avoids crashes that might occur
+	// when we try to update our array after we've been deallocated. 
+	
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
 	NSMutableArray *newDevices = [NSMutableArray array];
@@ -110,6 +117,7 @@
 						waitUntilDone:YES];
 	
 	[pool release];
+	[self release];
 	
 }
 

@@ -15,11 +15,17 @@
 
 -(id)openUntitledDocumentAndDisplay:(BOOL)displayDocument error:(NSError **)outError {
 		
-	KNPRSDevice *device = [DeviceSelectionController askForDevice];
+	NSString *devicePath = [DeviceSelectionController askForDevicePath];
 	
-	if (device) {
-
-		KNReaderDocument *doc = [[KNReaderDocument alloc] initWithDevice:device];
+	
+	if (devicePath) {
+		
+		//NSURL *url = [NSURL fileURLWithPath:devicePath];
+		NSURL *dbURL = [NSURL fileURLWithPath:[KNPRSDevice databasePathFromVolumePath:devicePath]];
+		
+		KNReaderDocument *doc = [[KNReaderDocument alloc] initWithContentsOfURL:dbURL 
+																		 ofType:@"xml" 
+																		  error:nil];
 		
 		
 		[self addDocument:doc];
@@ -27,6 +33,7 @@
 		[doc makeWindowControllers];
 		[doc showWindows];
 
+		[doc release];
 		return doc;
 		
 	} else {

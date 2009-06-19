@@ -40,9 +40,15 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
+	<string>2</string>
+	<key>CFBundleShortVersionString</key>
 	<string>0.1</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
+	<key>SUFeedURL</key>
+	<string>http://dbprocessor.kennettnet.co.uk/DeweyUpdates.xml</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>Update Signing Public Key.pem</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>

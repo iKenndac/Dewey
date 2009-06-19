@@ -10,6 +10,11 @@
 		1DDD582C0DA1D0D100B32029 /* PRSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* PRSDocument.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
 		502B21440FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 502B21420FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.m */; };
+		5041289E0FEB905F00872D49 /* Update Signing Public Key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5041289D0FEB905F00872D49 /* Update Signing Public Key.pem */; };
+		504128A20FEB909300872D49 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504128A10FEB909300872D49 /* Sparkle.framework */; };
+		504128AE0FEB90A900872D49 /* Sparkle.framework in Copy Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 504128A10FEB909300872D49 /* Sparkle.framework */; };
+		50412C870FEBB3A600872D49 /* Release Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50412C860FEBB3A600872D49 /* Release Notes.txt */; };
+		50412C890FEBB3D600872D49 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50412C880FEBB3D600872D49 /* License.txt */; };
 		50513E6B0FB2210200EB7309 /* KNPRSBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 50513E6A0FB2210200EB7309 /* KNPRSBook.m */; };
 		50513E7F0FB2227100EB7309 /* KNPRSPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 50513E7E0FB2227100EB7309 /* KNPRSPlaylist.m */; };
 		50513EBA0FB2293E00EB7309 /* KNPRSDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 50513EB90FB2293E00EB7309 /* KNPRSDevice.m */; };
@@ -46,6 +51,20 @@
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		504128B60FEB90B400872D49 /* Copy Embedded Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				504128AE0FEB90A900872D49 /* Sparkle.framework in Copy Embedded Frameworks */,
+			);
+			name = "Copy Embedded Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -61,6 +80,10 @@
 		32DBCF750370BD2300C91783 /* Dewey_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dewey_Prefix.pch; sourceTree = "<group>"; };
 		502B21420FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNVerticallyCenteredTextFieldCell.m; sourceTree = "<group>"; };
 		502B21430FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNVerticallyCenteredTextFieldCell.h; sourceTree = "<group>"; };
+		5041289D0FEB905F00872D49 /* Update Signing Public Key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Update Signing Public Key.pem"; sourceTree = "<group>"; };
+		504128A10FEB909300872D49 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		50412C860FEBB3A600872D49 /* Release Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Release Notes.txt"; sourceTree = "<group>"; };
+		50412C880FEBB3D600872D49 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		50513E690FB2210200EB7309 /* KNPRSBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNPRSBook.h; sourceTree = "<group>"; };
 		50513E6A0FB2210200EB7309 /* KNPRSBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNPRSBook.m; sourceTree = "<group>"; };
 		50513E7D0FB2227100EB7309 /* KNPRSPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNPRSPlaylist.h; sourceTree = "<group>"; };
@@ -125,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+				504128A20FEB909300872D49 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +158,7 @@
 		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				504128A10FEB909300872D49 /* Sparkle.framework */,
 				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -160,6 +185,8 @@
 		2A37F4AAFDCFA73011CA2CEA /* PRS Reader */ = {
 			isa = PBXGroup;
 			children = (
+				50412C860FEBB3A600872D49 /* Release Notes.txt */,
+				50412C880FEBB3D600872D49 /* License.txt */,
 				2A37F4ABFDCFA73011CA2CEA /* Classes */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
@@ -175,7 +202,6 @@
 				2A37F4AEFDCFA73011CA2CEA /* KNReaderDocument.h */,
 				2A37F4ACFDCFA73011CA2CEA /* KNReaderDocument.m */,
 				508DFA550FEA3FC500C2919A /* Controllers */,
-				508DFA530FEA3F8100C2919A /* UI */,
 				50628D170FB36F6100F7888B /* Custom Views */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
 			);
@@ -200,6 +226,7 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5041289D0FEB905F00872D49 /* Update Signing Public Key.pem */,
 				508DFA8E0FEA421800C2919A /* PRS505.png */,
 				50B0D40D0FEAFDC100246E63 /* Book.tif */,
 				50B0D40E0FEAFDC100246E63 /* Playlist.tif */,
@@ -262,15 +289,6 @@
 			name = "Custom Views";
 			sourceTree = "<group>";
 		};
-		508DFA530FEA3F8100C2919A /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				50628C760FB3691200F7888B /* KNReaderDocumentWindowController.h */,
-				50628C770FB3691200F7888B /* KNReaderDocumentWindowController.m */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
 		508DFA540FEA3F9700C2919A /* Device Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +309,8 @@
 		508DFA550FEA3FC500C2919A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				50628C760FB3691200F7888B /* KNReaderDocumentWindowController.h */,
+				50628C770FB3691200F7888B /* KNReaderDocumentWindowController.m */,
 				50975CFB0FE9927C005A1637 /* KNReaderDocumentController.h */,
 				50975CFC0FE9927C005A1637 /* KNReaderDocumentController.m */,
 				50975C090FE98B38005A1637 /* DeviceSelectionController.h */,
@@ -319,9 +339,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "Dewey" */;
 			buildPhases = (
+				50412A710FEB917900872D49 /* Run Build Number Script */,
 				8D15AC2B0486D014006FF6A4 /* Resources */,
 				8D15AC300486D014006FF6A4 /* Sources */,
 				8D15AC330486D014006FF6A4 /* Frameworks */,
+				504128B60FEB90B400872D49 /* Copy Embedded Frameworks */,
 			);
 			buildRules = (
 			);
@@ -364,10 +386,30 @@
 				508DFA8F0FEA421800C2919A /* PRS505.png in Resources */,
 				50B0D40F0FEAFDC100246E63 /* Book.tif in Resources */,
 				50B0D4100FEAFDC100246E63 /* Playlist.tif in Resources */,
+				5041289E0FEB905F00872D49 /* Update Signing Public Key.pem in Resources */,
+				50412C870FEBB3A600872D49 /* Release Notes.txt in Resources */,
+				50412C890FEBB3D600872D49 /* License.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50412A710FEB917900872D49 /* Run Build Number Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Build Number Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/perl;
+			shellScript = "# Created by Martin Pilkington on 29/06/2008.\n# Copyright 2008 M Cubed Software. All rights reserved.\n\n#Check if we're versioned under bzr\nif (-d \".bzr\") {\n #get the revno minus the new line\n my $revno = `/usr/local/bin/bzr revno`;\n substr($revno, -1, 1, \"\");\n\n #open the info plist\n open(my $input,  \"<\",  \"Info.plist\")  or die \"Can't open Info.plist: $!\";\n my $outputstring = \"\";\n\n #loop through each line until we find CFBundleVersion, then substitute the next line\n while (+<$input>) {\n  $outputstring .= \"$_\";\n  if (/[\\t ]+<key>CFBundleVersion<\\/key>\\n/) {\n   my $line = +<$input>;\n   $line =~ s/([\\t ]+<string>)(.*?)(<\\/string>)/$1.($revno).$3/eg;\n   $outputstring .= $line;\n  }\n }\n\n #write back out to Info.plist\n open(my $output,  \">\",  \"Info.plist\")  or die \"Can't open Info.plist: $!\";\n print $output $outputstring;\n} else {\n print \"This project is not versioned\";\n}\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D15AC300486D014006FF6A4 /* Sources */ = {
@@ -447,6 +489,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -464,6 +510,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Dewey_Prefix.pch;
@@ -479,6 +529,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -492,6 +543,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
