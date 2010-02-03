@@ -28,11 +28,15 @@
 +(NSString *)databasePathFromVolumePath:(NSString *)volume;
 +(NSString *)volumePathFromDatabasePath:(NSString *)databasePath;
 
+-(NSString *)bookContainerPath;
+
 -(KNPRSPlaylist *)createPlaylist;
 -(void)addPlaylist:(KNPRSPlaylist *)playlist;
 -(void)removePlaylist:(KNPRSPlaylist *)playlist;
 
 -(KNPRSBook *)bookWithId:(NSInteger)bookId;
+-(void)addBook:(KNPRSBook *)book;
+-(void)removeBook:(KNPRSBook *)book;
 
 -(NSInteger)performIntegrityCheck;
 -(void)constructFromXmlDocument:(NSXMLDocument *)doc;

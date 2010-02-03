@@ -9,7 +9,15 @@
 /* Begin PBXBuildFile section */
 		1DDD582C0DA1D0D100B32029 /* PRSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* PRSDocument.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
+		501250C5105E9D7700C214FB /* KNDeweyBookImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 501250C4105E9D7700C214FB /* KNDeweyBookImporter.m */; };
+		501250E8105EA8F400C214FB /* KNDeweyPDFImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 501250E7105EA8F400C214FB /* KNDeweyPDFImporter.m */; };
+		50125113105EAAEE00C214FB /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50125112105EAAEE00C214FB /* Quartz.framework */; };
+		501254D9105EB9FD00C214FB /* KNFileManagerExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 501254D8105EB9FD00C214FB /* KNFileManagerExtensions.m */; };
 		502B21440FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 502B21420FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.m */; };
+		5038FBF81061068500283747 /* KNDeweyPlainTextImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5038FBF71061068500283747 /* KNDeweyPlainTextImporter.m */; };
+		5038FBFD1061075F00283747 /* KNDeweyRTFImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5038FBFC1061075F00283747 /* KNDeweyRTFImporter.m */; };
+		5038FD3710610DEB00283747 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5038FD3610610DEB00283747 /* AddressBook.framework */; };
+		5038FDA410616B7600283747 /* KNDeweyEPubImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5038FDA310616B7600283747 /* KNDeweyEPubImporter.m */; };
 		5041289E0FEB905F00872D49 /* Update Signing Public Key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5041289D0FEB905F00872D49 /* Update Signing Public Key.pem */; };
 		504128A20FEB909300872D49 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504128A10FEB909300872D49 /* Sparkle.framework */; };
 		504128AE0FEB90A900872D49 /* Sparkle.framework in Copy Embedded Frameworks */ = {isa = PBXBuildFile; fileRef = 504128A10FEB909300872D49 /* Sparkle.framework */; };
@@ -78,8 +86,23 @@
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF750370BD2300C91783 /* Dewey_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dewey_Prefix.pch; sourceTree = "<group>"; };
+		501250C3105E9D7700C214FB /* KNDeweyBookImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDeweyBookImporter.h; sourceTree = "<group>"; };
+		501250C4105E9D7700C214FB /* KNDeweyBookImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNDeweyBookImporter.m; sourceTree = "<group>"; };
+		501250C6105E9E3B00C214FB /* KNDeweyBookFormatImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDeweyBookFormatImporter.h; sourceTree = "<group>"; };
+		501250E6105EA8F400C214FB /* KNDeweyPDFImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDeweyPDFImporter.h; sourceTree = "<group>"; };
+		501250E7105EA8F400C214FB /* KNDeweyPDFImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNDeweyPDFImporter.m; sourceTree = "<group>"; };
+		50125112105EAAEE00C214FB /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		501254D7105EB9FD00C214FB /* KNFileManagerExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFileManagerExtensions.h; sourceTree = "<group>"; };
+		501254D8105EB9FD00C214FB /* KNFileManagerExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFileManagerExtensions.m; sourceTree = "<group>"; };
 		502B21420FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNVerticallyCenteredTextFieldCell.m; sourceTree = "<group>"; };
 		502B21430FBE2B2600D5D03A /* KNVerticallyCenteredTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNVerticallyCenteredTextFieldCell.h; sourceTree = "<group>"; };
+		5038FBF61061068500283747 /* KNDeweyPlainTextImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDeweyPlainTextImporter.h; sourceTree = "<group>"; };
+		5038FBF71061068500283747 /* KNDeweyPlainTextImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNDeweyPlainTextImporter.m; sourceTree = "<group>"; };
+		5038FBFB1061075F00283747 /* KNDeweyRTFImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDeweyRTFImporter.h; sourceTree = "<group>"; };
+		5038FBFC1061075F00283747 /* KNDeweyRTFImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNDeweyRTFImporter.m; sourceTree = "<group>"; };
+		5038FD3610610DEB00283747 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		5038FDA210616B7600283747 /* KNDeweyEPubImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNDeweyEPubImporter.h; sourceTree = "<group>"; };
+		5038FDA310616B7600283747 /* KNDeweyEPubImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNDeweyEPubImporter.m; sourceTree = "<group>"; };
 		5041289D0FEB905F00872D49 /* Update Signing Public Key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Update Signing Public Key.pem"; sourceTree = "<group>"; };
 		504128A10FEB909300872D49 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		50412C860FEBB3A600872D49 /* Release Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Release Notes.txt"; sourceTree = "<group>"; };
@@ -149,6 +172,8 @@
 			files = (
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
 				504128A20FEB909300872D49 /* Sparkle.framework in Frameworks */,
+				50125113105EAAEE00C214FB /* Quartz.framework in Frameworks */,
+				5038FD3710610DEB00283747 /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +183,8 @@
 		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5038FD3610610DEB00283747 /* AddressBook.framework */,
+				50125112105EAAEE00C214FB /* Quartz.framework */,
 				504128A10FEB909300872D49 /* Sparkle.framework */,
 				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
 			);
@@ -202,6 +229,7 @@
 				2A37F4AEFDCFA73011CA2CEA /* KNReaderDocument.h */,
 				2A37F4ACFDCFA73011CA2CEA /* KNReaderDocument.m */,
 				508DFA550FEA3FC500C2919A /* Controllers */,
+				501250C2105E9D1400C214FB /* Book Importing */,
 				50628D170FB36F6100F7888B /* Custom Views */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
 			);
@@ -219,6 +247,8 @@
 				50D25E360FB31A1E009F6AC1 /* NSData+Base64.m */,
 				32DBCF750370BD2300C91783 /* Dewey_Prefix.pch */,
 				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+				501254D7105EB9FD00C214FB /* KNFileManagerExtensions.h */,
+				501254D8105EB9FD00C214FB /* KNFileManagerExtensions.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -248,6 +278,32 @@
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		501250C2105E9D1400C214FB /* Book Importing */ = {
+			isa = PBXGroup;
+			children = (
+				501250C3105E9D7700C214FB /* KNDeweyBookImporter.h */,
+				501250C4105E9D7700C214FB /* KNDeweyBookImporter.m */,
+				501250D5105EA63300C214FB /* Importers */,
+			);
+			name = "Book Importing";
+			sourceTree = "<group>";
+		};
+		501250D5105EA63300C214FB /* Importers */ = {
+			isa = PBXGroup;
+			children = (
+				501250C6105E9E3B00C214FB /* KNDeweyBookFormatImporter.h */,
+				501250E6105EA8F400C214FB /* KNDeweyPDFImporter.h */,
+				501250E7105EA8F400C214FB /* KNDeweyPDFImporter.m */,
+				5038FBF61061068500283747 /* KNDeweyPlainTextImporter.h */,
+				5038FBF71061068500283747 /* KNDeweyPlainTextImporter.m */,
+				5038FBFB1061075F00283747 /* KNDeweyRTFImporter.h */,
+				5038FBFC1061075F00283747 /* KNDeweyRTFImporter.m */,
+				5038FDA210616B7600283747 /* KNDeweyEPubImporter.h */,
+				5038FDA310616B7600283747 /* KNDeweyEPubImporter.m */,
+			);
+			name = Importers;
 			sourceTree = "<group>";
 		};
 		50513F500FB2350F00EB7309 /* Model */ = {
@@ -443,6 +499,12 @@
 				50975E2B0FE9962D005A1637 /* KNFrameView.m in Sources */,
 				50975E540FE997C5005A1637 /* KNPRSDeviceRef.m in Sources */,
 				50975E600FE9984F005A1637 /* KNPRSDeviceProvider.m in Sources */,
+				501250C5105E9D7700C214FB /* KNDeweyBookImporter.m in Sources */,
+				501250E8105EA8F400C214FB /* KNDeweyPDFImporter.m in Sources */,
+				501254D9105EB9FD00C214FB /* KNFileManagerExtensions.m in Sources */,
+				5038FBF81061068500283747 /* KNDeweyPlainTextImporter.m in Sources */,
+				5038FBFD1061075F00283747 /* KNDeweyRTFImporter.m in Sources */,
+				5038FDA410616B7600283747 /* KNDeweyEPubImporter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +596,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx10.5;
 			};
 			name = Debug;
@@ -547,6 +610,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx10.5;
 			};
 			name = Release;

@@ -11,11 +11,13 @@
 #import "KNTableCorner.h"
 #import "KNTableHeader.h"
 #import "KNDividerCell.h"
+#import "KNDeweyBookImporter.h"
 
 @interface KNReaderDocumentWindowController (Private)
 
 -(void)removePlaylistSheetDidEnd:(NSWindow *)sheet returnCode:(int)returnCode contextInfo:(void  *)contextInfo;
 -(void)setUndoActionTitleIfAllowed:(NSString *)title;
+-(void)importFiles:(NSArray *)files;
 
 @end
 
@@ -186,6 +188,44 @@
 					operation:kOperationRemoveBooks];
 }
 
+#pragma mark -
+#pragma mark Importing 
+
+-(IBAction)importBooks:(id)sender {
+
+	NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+	
+	[openPanel beginSheetForDirectory:nil
+								 file:nil
+								types:[[KNDeweyBookImporter sharedImporter] supportedFileExtensions]
+					   modalForWindow:[self window]
+						modalDelegate:self
+					   didEndSelector:@selector(importBooksPanelDidEnd:returnCode:contextInfo:)
+						  contextInfo:nil];
+	
+}
+
+- (void)importBooksPanelDidEnd:(NSOpenPanel *)openPanel returnCode:(int)returnCode contextInfo:(void *)contextInfo {
+	
+	if (returnCode == NSOKButton) {
+	
+		[self importFiles:[openPanel filenames]];
+		
+	}
+	
+}
+
+
+-(void)importFiles:(NSArray *)files {
+	
+	for (NSString *file in files) {
+		[[KNDeweyBookImporter sharedImporter] importFromFileAtURL:[NSURL fileURLWithPath:file]
+														 inWindow:[self window]
+														 toDevice:[[self document] device]];
+	}
+	
+}
+
 
 #pragma mark -
 #pragma mark TableViews
@@ -346,7 +386,7 @@
         id plist = [[info draggingPasteboard] propertyListForType:type];
         
         NSArray *bookIds = [plist valueForKey:@"bookIds"];
-        NSMutableArray *books = [[NSMutableArray alloc] initWithCapacity:[bookIds count]];
+		NSMutableArray *books = [NSMutableArray arrayWithCapacity:[bookIds count]];
         
         for (NSString *idString in bookIds) {
             

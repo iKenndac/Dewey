@@ -35,6 +35,7 @@ typedef enum {
 -(IBAction)addPlaylist:(id)sender;
 -(IBAction)removePlaylist:(id)sender;
 -(IBAction)removeBooks:(id)sender;
+-(IBAction)importBooks:(id)sender;
 
 #pragma mark -
 #pragma mark Undo

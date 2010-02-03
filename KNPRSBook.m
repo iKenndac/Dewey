@@ -7,7 +7,6 @@
 //
 
 #import "KNPRSBook.h"
-#import "KNPRSBookmark.h"
 #import "KNPRSLayout.h"
 #import "NSData+Base64.h"
 
@@ -78,6 +77,9 @@
                 if (bookmark) {
                     [historyBookmarks addObject:bookmark];
                 }
+				
+				[bookmark release];
+				bookmark = nil;
             }
         }
         
@@ -93,6 +95,8 @@
                 if (bookmark) {
                     [bookBookmarks addObject:bookmark];
                 }
+				
+				[bookmark release];
             }
         }
         
@@ -108,6 +112,9 @@
                 if (layout) {
                     [bookLayouts addObject:layout];
                 }
+				
+				[layout release];
+				layout = nil;
             }
         }
         
@@ -284,16 +291,28 @@
 
 -(NSString *)humanReadableFileSize {
 	
-	float floatSize = (float)fileSize;
-    if (fileSize<1023)
+	int sizeComparator = 1023;
+	int sizeDivisor = 1024;
+	
+	// On 10.6, follow the base-10 convention for file sizes.
+	SInt32 version = 0;
+	Gestalt( gestaltSystemVersionMinor, &version );
+	
+	if ((version >= 6) && [[NSUserDefaults standardUserDefaults] boolForKey:@"OverrideSnowLeopardFileSizeBehavior"] == NO) {
+		sizeComparator = 999;
+		sizeDivisor = 1000;
+	}
+	
+	float floatSize = (float)[self fileSize];
+    if (fileSize < sizeComparator)
         return([NSString stringWithFormat:@"%1.0f bytes",fileSize]);
-    floatSize = floatSize / 1024;
-    if (floatSize<1023)
+    floatSize = floatSize / sizeDivisor;
+    if (floatSize < sizeComparator)
         return([NSString stringWithFormat:@"%1.1f KB",floatSize]);
-    floatSize = floatSize / 1024;
-    if (floatSize<1023)
+    floatSize = floatSize / sizeDivisor;
+    if (floatSize < sizeComparator)
         return([NSString stringWithFormat:@"%1.2f MB",floatSize]);
-    floatSize = floatSize / 1024;
+    floatSize = floatSize / sizeDivisor;
     
     // Add as many as you like
     

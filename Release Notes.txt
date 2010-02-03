@@ -1,6 +1,25 @@
 Dewey Release Notes
 ===================
 
+Version 0.2
+===========
+
+ -	Fixed a few memory leaks.
+ 
+ -	We now show file sizes in base-10 on Snow Leopard to match the system.
+ 
+ -	Added -addBook: and -removeBook: to KNPRSDevice.
+ 
+ -	Added functionality to add files to the device — see the
+	KNDeweyBookImporter class. This class uses helpers to deal
+	with specific file formats - see the KNDeweyBookFormatImporter
+	protocol.
+	
+ -	Added KNDeweyPDFImporter.
+	
+ -	Added KNDewey[PlainText/RTF]Importer.
+ 
+ -	Added KNDeweyEPubImporter.
 
 Version 0.1 (Released Friday, June 19th, 2009)
 ==============================================

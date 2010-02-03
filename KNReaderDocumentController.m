@@ -41,10 +41,12 @@
 		NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:@"KNDocumentCreationFailure",
                                   NSLocalizedDescriptionKey,
                                   @"The document could not be opened.", NSLocalizedFailureReasonErrorKey, nil];
-        
-        *outError = [[NSError errorWithDomain:@"KNDocumentCreationFailure"
+        if (outError) {
+			*outError = [[NSError errorWithDomain:@"KNDocumentCreationFailure"
                                          code:1
                                      userInfo:userInfo] retain];
+		}
+        
 		return nil;
 		
 	} 

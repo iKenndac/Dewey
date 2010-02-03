@@ -118,6 +118,32 @@ static NSString *deviceKVOContext = @"deviceKVO";
     
 }
 
+-(void)addBook:(KNPRSBook *)book {
+	
+	[book setSourceId:1];
+	[self setBooks:[[self books] arrayByAddingObject:book]];
+}
+
+-(void)removeBook:(KNPRSBook *)book {
+	
+	for (KNPRSPlaylist *playlist in [self playlists]) {
+		[playlist removeBooks:[NSArray arrayWithObject:book]];
+	}
+	
+	NSMutableArray *newBooks = [NSMutableArray arrayWithCapacity:[[self books] count] - 1];
+    
+    for (KNPRSBook *existingBook in [self books]) {
+        if (existingBook != book) {
+            [newBooks addObject:existingBook];
+        }
+    }
+    
+    [self setBooks:newBooks];  
+	
+	// TODO: Should we delete the file?
+	
+}
+
 #pragma mark -
 #pragma mark Book Provider Protocol
 
@@ -165,6 +191,14 @@ static NSString *deviceKVOContext = @"deviceKVO";
 	return [[[databasePath stringByDeletingLastPathComponent]
 			 stringByDeletingLastPathComponent]
 			stringByDeletingLastPathComponent];
+	
+}
+
+-(NSString *)bookContainerPath {
+	
+	return [[[[self volumePath] stringByAppendingPathComponent:@"database"] 
+			 stringByAppendingPathComponent:@"media"] 
+			stringByAppendingPathComponent:@"books"];  
 	
 }
 
