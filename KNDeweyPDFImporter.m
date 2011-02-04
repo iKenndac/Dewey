@@ -50,8 +50,7 @@
 		[book setTitle:[[document documentAttributes] valueForKey:PDFDocumentTitleAttribute]];
 		[book setAuthor:[[document documentAttributes] valueForKey:PDFDocumentAuthorAttribute]];
 		[book setCurrentPage:1];
-		[book setDate:[[[NSFileManager defaultManager] fileAttributesAtPath:[fileURL path]
-															   traverseLink:YES] 
+		[book setDate:[[[NSFileManager defaultManager] attributesOfItemAtPath:[fileURL path] error:nil] 
 					   valueForKey:NSFileCreationDate]];
 		
 		KNPRSBookmark *firstPageHistory = [[[KNPRSBookmark alloc] init] autorelease];
@@ -60,8 +59,7 @@
 		[firstPageHistory setTotalPages:[document pageCount]];
 		
 		[book setHistory:[NSArray arrayWithObject:firstPageHistory]];
-		[book setFileSize:[[[[NSFileManager defaultManager] fileAttributesAtPath:[fileURL path]
-																	traverseLink:YES]
+		[book setFileSize:[[[[NSFileManager defaultManager] attributesOfItemAtPath:[fileURL path] error:nil]
 							valueForKey:NSFileSize] unsignedIntegerValue]]; 
 		[book setMimeType:[[self class] formatMimeType]];
 		

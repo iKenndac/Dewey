@@ -20,7 +20,7 @@ static KNDeweyBookImporter *staticImporter;
 +(KNDeweyBookImporter *)sharedImporter {
 	
 	if (!staticImporter) {
-		[[KNDeweyBookImporter alloc] init];
+		staticImporter = [[KNDeweyBookImporter alloc] init];
 	}
 	return staticImporter;
 }
@@ -29,7 +29,7 @@ static KNDeweyBookImporter *staticImporter;
 	
 	if (!staticImporter) {
 		
-		if (self = [super init]) {
+		if ((self = [super init])) {
 			
 			// Find implementors of KNDeweyBookFormatImporter  and add them to our list;
 			

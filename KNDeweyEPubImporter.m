@@ -68,7 +68,9 @@
 	NSString *tempDirPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[self createUUID]];
 	
 	BOOL success = [[NSFileManager defaultManager] createDirectoryAtPath:tempDirPath
-															  attributes:nil];
+                                             withIntermediateDirectories:YES
+                                                              attributes:nil
+                                                                   error:nil];
 	
 	if (success) {
 		
@@ -174,12 +176,12 @@
 	}
 	
 	[book setCurrentPage:1];
-	[book setDate:[[[NSFileManager defaultManager] fileAttributesAtPath:[[self incomingFileURL] path]
-														   traverseLink:YES] 
+	[book setDate:[[[NSFileManager defaultManager] attributesOfItemAtPath:[[self incomingFileURL] path]
+                                                                    error:nil] 
 				   valueForKey:NSFileCreationDate]];
 	
-	[book setFileSize:[[[[NSFileManager defaultManager] fileAttributesAtPath:[[self incomingFileURL] path]
-																traverseLink:YES]
+	[book setFileSize:[[[[NSFileManager defaultManager] attributesOfItemAtPath:[[self incomingFileURL] path]
+                                                                         error:nil]
 						valueForKey:NSFileSize] unsignedIntegerValue]]; 
 	[book setMimeType:[[self class] formatMimeType]];
 	

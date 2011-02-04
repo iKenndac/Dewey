@@ -20,7 +20,7 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
 + (id)dataWithBase64EncodedString:(NSString *)string;
 {
 	if (string == nil)
-		[NSException raise:NSInvalidArgumentException format:nil];
+        [[NSException exceptionWithName:NSInvalidArgumentException reason:nil userInfo:nil] raise];
 	if ([string length] == 0)
 		return [NSData data];
 	

@@ -41,12 +41,10 @@
 	[book setTitle:[[[fileURL path] lastPathComponent] stringByDeletingPathExtension]];
 	[book setAuthor:nil];
 	[book setCurrentPage:1];
-	[book setDate:[[[NSFileManager defaultManager] fileAttributesAtPath:[fileURL path]
-														   traverseLink:YES] 
+	[book setDate:[[[NSFileManager defaultManager] attributesOfItemAtPath:[fileURL path] error:nil] 
 				   valueForKey:NSFileCreationDate]];
 	
-	[book setFileSize:[[[[NSFileManager defaultManager] fileAttributesAtPath:[fileURL path]
-																traverseLink:YES]
+	[book setFileSize:[[[[NSFileManager defaultManager] attributesOfItemAtPath:[fileURL path] error:nil]
 						valueForKey:NSFileSize] unsignedIntegerValue]]; 
 	[book setMimeType:[[self class] formatMimeType]];
 	

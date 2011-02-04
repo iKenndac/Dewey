@@ -330,7 +330,7 @@
         
         NSArray *books = [[bookController arrangedObjects] objectsAtIndexes:rowIndexes];
         
-        NSMutableArray *bookIds = [[NSMutableArray alloc] initWithCapacity:[books count]];
+        NSMutableArray *bookIds = [[[NSMutableArray alloc] initWithCapacity:[books count]] autorelease];
         
         for (KNPRSBook *book in books) {
             [bookIds addObject:[NSString stringWithFormat:@"%d", [book bookId]]];
